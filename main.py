@@ -13,10 +13,10 @@ def main():
     while 1:
         log_state()
         for event in pygame.event.get():
-            pass
+            if event.type == pygame.QUIT:
+                return
         screen.fill("black")
         pygame.display.flip()
-
 
 if __name__ == "__main__":
     main()
